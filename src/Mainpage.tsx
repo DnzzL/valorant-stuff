@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { Card, Layout, List, Menu, Modal, message } from 'antd';
 import * as d3 from 'd3';
 import React, { useEffect, useRef, useState } from 'react';
-import { agents } from './Agents';
+import { agents, Agent } from './Agents';
 import { ReactComponent as BindSvg } from './assets/maps/bind.svg';
 import { ReactComponent as HavenSvg } from './assets/maps/haven.svg';
 import { ReactComponent as SplitSvg } from './assets/maps/split.svg';
@@ -83,7 +83,7 @@ export const MainPage = () => {
           addTrajectory(svg, trajectory, selectedAgent, onTrajectoryClicked)
         )
       : message.warn(`no stuff for ${selectedAgent} on ${selectedMap} yet.`);
-  }, [selectedAgent]);
+  });
 
   function clicked(this: any) {
     var clickpos = d3.mouse(this);
@@ -116,7 +116,12 @@ export const MainPage = () => {
             md: 6,
             xl: 10,
           }}
-          dataSource={agents}
+          dataSource={agents.filter((agent: Agent) =>
+            trajectories
+              .get(selectedMap)!
+              .map((agentTrajectory: AgentTrajectory) => agentTrajectory.agent)
+              .includes(agent.name)
+          )}
           renderItem={(item) => (
             <List.Item>
               <StyledCard
@@ -147,14 +152,23 @@ export const MainPage = () => {
         )}
         <Footer style={{ textAlign: 'center' }}>
           <div>
-            Created by{' '}
-            <a href='https://www.thomaslegrand.tech'>Thomas Legrand</a> ©
+            Created by
+            <a href='https://www.thomaslegrand.tech'> Thomas Legrand </a>
             {new Date().getFullYear()}
           </div>
           <div>
             Credits: <a href='https://www.proguides.com'>ProGuides Valorant</a>,
             <a href='https://www.youtube.com/channel/UCWpzQrZm1zKTX8w7fkgZwLQ'>
               301 Entertainment
+            </a>
+            ,
+            <a href='https://www.youtube.com/channel/UCfmXDMVBR0hu9bdUiJRMOgQ'>
+              FeyRazzle
+            </a>
+          </div>
+          <div>
+            <a href='https://github.com/DnzzL/valorant-stuff/blob/master/README.md'>
+              How to contribute
             </a>
           </div>
         </Footer>

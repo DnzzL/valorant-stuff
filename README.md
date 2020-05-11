@@ -1,44 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Valorant Stuff (Work in Progress)
 
-## Available Scripts
+The goal of this project is to provide a cheatsheet to throw accurate and efficient stuff in Valorant.
 
-In the project directory, you can run:
+## How to contribute ?
 
-### `npm start`
+Let say you want to contribute for the agent _Omen_ on the map _Bind_ .
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Fork the Github repository.
+- Put a screenshot of the launching spot for each spot you want to add (Name it `1.png` , `2.png` ...) under the following repository:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```
+src/
+├── assets/
+│   └── trajectories/
+|       └── bind/
+|           └── omen/
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Add the trajectories to the following file:
 
-### `npm run build`
+```
+src/
+├── assets/
+│   └── trajectories/
+|       └── bind/
+|           ├── trajectories.ts
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Add the details of the trajectory to the corresponding array of trajectories. (details of interfaces in `src/shared/interfaces.ts`)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+{
+    agent: 'Omen',
+    trajectories: [
+      {
+        id: 1,
+        description: 'A Lobby',
+        type: 'projectile',
+        details: {
+          spell: 'Poison Cloud',
+        },
+        path: [
+          [634, 475.2265625],
+          [508, 374.2265625],
+        ],
+      },
+    ],
+}
+```
 
-### `npm run eject`
+**NB: you can obtain the coordinates for the path by clicking on the corresponsing map and opening the developer console (ctrl + shift + i)**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Create a Pull request
+- Add Credits to `src/Mainpage.tsx`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+<a href='link'>Name</a>
+```

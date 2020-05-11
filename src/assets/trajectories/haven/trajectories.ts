@@ -286,7 +286,7 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 13,
-        description: 'C Site',
+        description: 'B Site',
         type: 'projectile',
         details: {
           spell: 'Poison Cloud',
@@ -295,6 +295,19 @@ export const havenTrajectories: AgentTrajectory[] = [
         path: [
           [412, 328.2265625],
           [302, 260.2265625],
+        ],
+      },
+      {
+        id: 14,
+        description: 'B Site',
+        type: 'projectile',
+        details: {
+          spell: 'Snake Bite',
+          info: 'Run Throw',
+        },
+        path: [
+          [335, 184.2265625],
+          [366, 490.2265625],
         ],
       },
     ],

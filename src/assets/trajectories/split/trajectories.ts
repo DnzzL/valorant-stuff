@@ -100,4 +100,184 @@ export const splitTrajectories: AgentTrajectory[] = [
       },
     ],
   },
+  {
+    agent: 'Viper',
+    trajectories: [
+      {
+        id: 1,
+        description: 'A Lobby',
+        type: 'projectile',
+        details: {
+          spell: 'Poison Cloud',
+        },
+        path: [
+          [634, 475.2265625],
+          [508, 374.2265625],
+        ],
+      },
+      {
+        id: 2,
+        description: 'A Lobby',
+        type: 'wall',
+        path: [
+          [639, 371.2265625],
+          [550, 65.2265625],
+        ],
+      },
+      {
+        id: 3,
+        description: 'A Lobby',
+        type: 'projectile',
+        details: {
+          spell: 'Poison Cloud',
+          info: 'Jump Throw',
+        },
+        path: [
+          [634, 475.2265625],
+          [532, 222.2265625],
+        ],
+      },
+      {
+        id: 4,
+        description: 'A Lobby',
+        type: 'projectile',
+        details: {
+          spell: 'Snake Bite',
+        },
+        path: [
+          [634, 475.2265625],
+          [507, 360.2265625],
+        ],
+      },
+      {
+        id: 5,
+        description: 'A Lobby',
+        type: 'projectile',
+        details: {
+          spell: 'Snake Bite',
+        },
+        path: [
+          [634, 475.2265625],
+          [528, 230.2265625],
+        ],
+      },
+      {
+        id: 6,
+        description: 'A Lobby',
+        type: 'projectile',
+        details: {
+          spell: 'Snake Bite',
+        },
+        path: [
+          [634, 475.2265625],
+          [576, 129.2265625],
+        ],
+      },
+      {
+        id: 7,
+        description: 'A Lobby',
+        type: 'projectile',
+        details: {
+          spell: 'Snake Bite',
+        },
+        path: [
+          [639, 406.2265625],
+          [538, 280.2265625],
+        ],
+      },
+      {
+        id: 8,
+        description: 'B Lobby',
+        type: 'projectile',
+        details: {
+          spell: 'Poison Cloud',
+          info: 'Jump Throw',
+        },
+        path: [
+          [111, 482.2265625],
+          [207, 283.2265625],
+        ],
+      },
+      {
+        id: 9,
+        description: 'B Lobby',
+        type: 'wall',
+        path: [
+          [165, 516.2265625],
+          [51, 200.2265625],
+        ],
+      },
+      {
+        id: 10,
+        description: 'B Main',
+        type: 'projectile',
+        details: {
+          spell: 'Snake Bite',
+        },
+        path: [
+          [45, 371.2265625],
+          [65, 208.2265625],
+          [88, 255.2265625],
+        ],
+      },
+      {
+        id: 11,
+        description: 'B Main',
+        type: 'projectile',
+        details: {
+          spell: 'Snake Bite',
+        },
+        path: [
+          [68, 370.2265625],
+          [55, 207.2265625],
+          [24, 225.2265625],
+        ],
+      },
+      {
+        id: 12,
+        description: 'Screens',
+        type: 'wall',
+        path: [
+          [585, 134.2265625],
+          [588, 433.2265625],
+        ],
+      },
+      {
+        id: 13,
+        description: 'A Tower',
+        type: 'projectile',
+        details: {
+          spell: 'Poison Cloud',
+        },
+        path: [
+          [466, 228.2265625],
+          [498, 378.2265625],
+        ],
+      },
+      {
+        id: 14,
+        description: 'B Alley',
+        type: 'projectile',
+        details: {
+          spell: 'Poison Cloud',
+        },
+        path: [
+          [126, 191.2265625],
+          [204, 285.2265625],
+        ],
+      },
+      {
+        id: 15,
+        description: 'B Site',
+        type: 'projectile',
+        details: {
+          spell: 'Snake Bite',
+        },
+        path: [
+          [176, 233.2265625],
+          [45, 173.2265625],
+        ],
+      },
+    ],
+  },
 ];

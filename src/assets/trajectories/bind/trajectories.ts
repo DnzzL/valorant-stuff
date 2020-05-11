@@ -101,4 +101,117 @@ export const bindTrajectories: AgentTrajectory[] = [
       },
     ],
   },
+  {
+    agent: 'Viper',
+    trajectories: [
+      {
+        id: 1,
+        description: 'A Short',
+        type: 'wall',
+        path: [
+          [488, 406.2265625],
+          [462, 138.2265625],
+        ],
+      },
+      {
+        id: 2,
+        description: 'A Short',
+        type: 'projectile',
+        details: {
+          spell: 'Poison Cloud',
+        },
+        path: [
+          [498, 367.2265625],
+          [472, 214.2265625],
+        ],
+      },
+      {
+        id: 3,
+        description: 'A Bath',
+        type: 'projectile',
+        details: {
+          spell: 'Poison Cloud',
+        },
+        path: [
+          [602, 305.2265625],
+          [540, 142.2265625],
+        ],
+      },
+      {
+        id: 4,
+        description: 'A Short',
+        type: 'wall',
+        path: [
+          [612, 316.2265625],
+          [436, 158.2265625],
+        ],
+      },
+      {
+        id: 5,
+        description: 'B Long',
+        type: 'wall',
+        path: [
+          [57, 399.2265625],
+          [81, 131.2265625],
+        ],
+      },
+      {
+        id: 6,
+        description: 'B Long',
+        type: 'projectile',
+        details: {
+          spell: 'Poison Cloud',
+          info: 'Jump Throw',
+        },
+        path: [
+          [57, 399.2265625],
+          [176, 203.2265625],
+        ],
+      },
+      {
+        id: 7,
+        description: 'B Short',
+        type: 'wall',
+        path: [
+          [263, 400.2265625],
+          [105, 128.2265625],
+        ],
+      },
+      {
+        id: 8,
+        description: 'A Port',
+        type: 'projectile',
+        details: {
+          spell: 'Poison Cloud',
+          info: 'One-Way, Jump Throw',
+        },
+        path: [
+          [421, 276.2265625],
+          [422, 291.2265625],
+        ],
+      },
+      {
+        id: 9,
+        description: 'A Port',
+        type: 'wall',
+        path: [
+          [398, 239.2265625],
+          [102, 247.2265625],
+        ],
+      },
+      {
+        id: 10,
+        description: 'A Port',
+        type: 'projectile',
+        details: {
+          spell: 'Poison Cloud',
+          info: 'One-Way',
+        },
+        path: [
+          [558, 255.2265625],
+          [538, 267.2265625],
+        ],
+      },
+    ],
+  },
 ];
