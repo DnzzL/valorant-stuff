@@ -1,10 +1,8 @@
-import { Card, Layout } from 'antd';
+import { Carousel, Descriptions, Layout } from 'antd';
 import React from 'react';
 import { Trajectory } from './shared/interfaces';
 
-const { Content, Footer } = Layout;
-
-const { Meta } = Card;
+const { Content } = Layout;
 
 type Props = {
   map: string;
@@ -17,31 +15,45 @@ export const StuffDetailsComponent = ({
   selectedAgent,
   trajectory,
 }: Props) => {
-  const IMG = (map: string, selectedAgent: string, id: number) => {
-    return require(`./assets/trajectories/${map.toLowerCase()}/${selectedAgent.toLowerCase()}/${id}.png`);
+  const IMG = (
+    map: string,
+    selectedAgent: string,
+    id: number,
+    position: boolean = false
+  ) => {
+    return position
+      ? require(`./assets/trajectories/${map.toLowerCase()}/${selectedAgent.toLowerCase()}/${id}_start.png`)
+      : require(`./assets/trajectories/${map.toLowerCase()}/${selectedAgent.toLowerCase()}/${id}.png`);
+  };
+
+  const getImages = () => {
+    const throwImage = IMG(map, selectedAgent, trajectory.id);
+    try {
+      const positionImage = IMG(map, selectedAgent, trajectory.id, true);
+      return (
+        <Carousel>
+          <img alt={positionImage} src={throwImage} />
+          <img alt={selectedAgent} src={throwImage} />
+        </Carousel>
+      );
+    } catch {
+      return (
+        <Carousel>
+          <img alt={selectedAgent} src={throwImage} />
+        </Carousel>
+      );
+    }
   };
 
   return (
     <Layout>
       <Content>
-        <Card
-          cover={
-            <img
-              alt={selectedAgent}
-              src={IMG(map, selectedAgent, trajectory.id)}
-            />
-          }
-        >
-          <Meta
-            title={trajectory.description}
-            description={
-              trajectory.details &&
-              Object.entries(trajectory.details)
-                .map(([key, value]) => `${key}: ${value}`)
-                .join(', ')
-            }
-          />
-        </Card>
+        {getImages()}
+        <Descriptions bordered>
+          {Object.entries(trajectory.details).map(([key, value]) => (
+            <Descriptions.Item label={key}>{value as String}</Descriptions.Item>
+          ))}
+        </Descriptions>
       </Content>
     </Layout>
   );

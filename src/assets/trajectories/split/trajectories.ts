@@ -8,9 +8,12 @@ export const splitTrajectories: AgentTrajectory[] = [
         id: 1,
         description: 'A Ramp',
         type: 'projectile',
+        side: 'defense',
         details: {
-          strength: 3,
+          strength: 'full',
           bounces: 1,
+          description:
+            'go over to the A ramp and look through the metal bars on your right',
         },
         path: [
           [494.5, 342.2265625],
@@ -21,9 +24,12 @@ export const splitTrajectories: AgentTrajectory[] = [
         id: 2,
         description: 'A Lobby',
         type: 'projectile',
+        side: 'offense',
         details: {
-          strength: 3,
+          strength: 'full',
           bounces: 1,
+          description:
+            'go over to the A site and stand next to this grass place and aim towards the top right of the blue sign.',
         },
         path: [
           [635.5, 540.2265625],
@@ -35,9 +41,12 @@ export const splitTrajectories: AgentTrajectory[] = [
         id: 3,
         description: 'B Lobby',
         type: 'projectile',
+        side: 'offense',
         details: {
-          strength: 3,
+          strength: 'full',
           bounces: 1,
+          description:
+            'on the trash pile, look for the orange box sticking out and stand above the corner of it then put your crosshair on the white line directly on the side of the satellite.',
         },
         path: [
           [129.5, 453.2265625],
@@ -48,9 +57,12 @@ export const splitTrajectories: AgentTrajectory[] = [
         id: 4,
         description: 'B Lobby',
         type: 'projectile',
+        side: 'offense',
         details: {
-          strength: 3,
+          strength: 'full',
           bounces: 0,
+          description:
+            'on the trash pile, go into the corner and look up, move to the left until your crosshair lines up with the roof then turn around and put your crosshair on the top right corner of the discolored rectangle. Don"t move the move and move back towards the route that connects into the middle and line the bow with the roof above you.',
         },
         path: [
           [158.5, 536.2265625],
@@ -61,9 +73,12 @@ export const splitTrajectories: AgentTrajectory[] = [
         id: 5,
         description: 'B Tower',
         type: 'projectile',
+        side: 'defense',
         details: {
-          strength: 3,
+          strength: 'full',
           bounces: 0,
+          description:
+            'sat on the top of the box on the top right edge coming from Defender spawn, found the brown smudge than follow it up just below the first wire.',
         },
         path: [
           [239.5, 318.2265625],
@@ -74,9 +89,12 @@ export const splitTrajectories: AgentTrajectory[] = [
         id: 6,
         description: 'B Site',
         type: 'projectile',
+        side: 'defense',
         details: {
-          strength: 3,
+          strength: 'full',
           bounces: 2,
+          description:
+            'go to the back of the site, find the crack in the pavement near the newspaper, find the pinkish corner and aim just below where it would be.',
         },
         path: [
           [167.5, 208.2265625],
@@ -87,6 +105,7 @@ export const splitTrajectories: AgentTrajectory[] = [
         id: 7,
         description: 'A Site',
         type: 'projectile',
+        side: 'defense',
         details: {
           strength: 3,
           bounces: 2,
@@ -107,6 +126,7 @@ export const splitTrajectories: AgentTrajectory[] = [
         id: 1,
         description: 'A Lobby',
         type: 'projectile',
+        side: 'offense',
         details: {
           spell: 'Poison Cloud',
         },
@@ -118,6 +138,7 @@ export const splitTrajectories: AgentTrajectory[] = [
       {
         id: 2,
         description: 'A Lobby',
+        side: 'offense',
         type: 'wall',
         path: [
           [639, 371.2265625],
@@ -127,6 +148,7 @@ export const splitTrajectories: AgentTrajectory[] = [
       {
         id: 3,
         description: 'A Lobby',
+        side: 'offense',
         type: 'projectile',
         details: {
           spell: 'Poison Cloud',
@@ -140,6 +162,7 @@ export const splitTrajectories: AgentTrajectory[] = [
       {
         id: 4,
         description: 'A Lobby',
+        side: 'offense',
         type: 'projectile',
         details: {
           spell: 'Snake Bite',
@@ -152,6 +175,7 @@ export const splitTrajectories: AgentTrajectory[] = [
       {
         id: 5,
         description: 'A Lobby',
+        side: 'offense',
         type: 'projectile',
         details: {
           spell: 'Snake Bite',
@@ -164,6 +188,7 @@ export const splitTrajectories: AgentTrajectory[] = [
       {
         id: 6,
         description: 'A Lobby',
+        side: 'offense',
         type: 'projectile',
         details: {
           spell: 'Snake Bite',
@@ -176,6 +201,7 @@ export const splitTrajectories: AgentTrajectory[] = [
       {
         id: 7,
         description: 'A Lobby',
+        side: 'offense',
         type: 'projectile',
         details: {
           spell: 'Snake Bite',
@@ -188,6 +214,7 @@ export const splitTrajectories: AgentTrajectory[] = [
       {
         id: 8,
         description: 'B Lobby',
+        side: 'offense',
         type: 'projectile',
         details: {
           spell: 'Poison Cloud',
@@ -201,6 +228,7 @@ export const splitTrajectories: AgentTrajectory[] = [
       {
         id: 9,
         description: 'B Lobby',
+        side: 'offense',
         type: 'wall',
         path: [
           [165, 516.2265625],
@@ -210,6 +238,7 @@ export const splitTrajectories: AgentTrajectory[] = [
       {
         id: 10,
         description: 'B Main',
+        side: 'offense',
         type: 'projectile',
         details: {
           spell: 'Snake Bite',
@@ -223,6 +252,7 @@ export const splitTrajectories: AgentTrajectory[] = [
       {
         id: 11,
         description: 'B Main',
+        side: 'offense',
         type: 'projectile',
         details: {
           spell: 'Snake Bite',
@@ -236,6 +266,7 @@ export const splitTrajectories: AgentTrajectory[] = [
       {
         id: 12,
         description: 'Screens',
+        side: 'defense',
         type: 'wall',
         path: [
           [585, 134.2265625],
@@ -245,6 +276,7 @@ export const splitTrajectories: AgentTrajectory[] = [
       {
         id: 13,
         description: 'A Tower',
+        side: 'defense',
         type: 'projectile',
         details: {
           spell: 'Poison Cloud',
@@ -257,6 +289,7 @@ export const splitTrajectories: AgentTrajectory[] = [
       {
         id: 14,
         description: 'B Alley',
+        side: 'defense',
         type: 'projectile',
         details: {
           spell: 'Poison Cloud',
@@ -270,6 +303,7 @@ export const splitTrajectories: AgentTrajectory[] = [
         id: 15,
         description: 'B Site',
         type: 'projectile',
+        side: 'defense',
         details: {
           spell: 'Snake Bite',
         },

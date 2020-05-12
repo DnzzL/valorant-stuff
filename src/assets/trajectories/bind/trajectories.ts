@@ -8,14 +8,17 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 1,
         description: 'B Short',
         type: 'projectile',
+        side: 'offense',
         details: {
-          strength: 3,
+          strength: 'full',
           bounces: 2,
+          description:
+            'stand against the two stacks carboard boxes, look for the silo and aim at the white smudge.',
         },
         path: [
           [262.5, 313.2265625],
           [130.5, 427.2265625],
-          [372.5, 254.2265625],
+          [266, 295.2265625],
           [124.5, 146.2265625],
         ],
       },
@@ -23,9 +26,12 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 2,
         description: 'B Long',
         type: 'projectile',
+        side: 'offense',
         details: {
           strength: 2,
           bounces: 0,
+          description:
+            'by the cactus on the rock wall behind you, look towards the roof in front of you.',
         },
         path: [
           [168.5, 493.2265625],
@@ -36,9 +42,11 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 3,
         description: 'Defender side spawn',
         type: 'projectile',
+        side: 'defense',
         details: {
           strength: 2,
           bounces: 1,
+          description: 'look for the white dot in the black smudge',
         },
         path: [
           [377.5, 23.2265625],
@@ -49,9 +57,11 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 4,
         description: 'A Short',
         type: 'projectile',
+        side: 'offense',
         details: {
-          strength: 3,
+          strength: 'full',
           bounces: 2,
+          description: 'against the barrel from the spawn left of A short',
         },
         path: [
           [389.5, 382.2265625],
@@ -64,6 +74,7 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 5,
         description: 'B Elbow',
         type: 'projectile',
+        side: 'defense',
         details: {
           strength: 1,
           bounces: 0,
@@ -77,8 +88,9 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 6,
         description: 'B Site',
         type: 'projectile',
+        side: 'defense',
         details: {
-          strength: 3,
+          strength: 'full',
           bounces: 0,
         },
         path: [
@@ -90,9 +102,12 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 7,
         description: 'A Bath',
         type: 'projectile',
+        side: 'offense',
         details: {
           strength: 2,
           bounces: 0,
+          description:
+            'sat on top of the drain pass, aim toward the skylight above and look at the bottom of the design.',
         },
         path: [
           [591.5, 297.2265625],
@@ -108,6 +123,7 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 1,
         description: 'A Short',
         type: 'wall',
+        side: 'offense',
         path: [
           [488, 406.2265625],
           [462, 138.2265625],
@@ -117,6 +133,7 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 2,
         description: 'A Short',
         type: 'projectile',
+        side: 'offense',
         details: {
           spell: 'Poison Cloud',
         },
@@ -129,6 +146,7 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 3,
         description: 'A Bath',
         type: 'projectile',
+        side: 'offense',
         details: {
           spell: 'Poison Cloud',
         },
@@ -141,6 +159,7 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 4,
         description: 'A Short',
         type: 'wall',
+        side: 'offense',
         path: [
           [612, 316.2265625],
           [436, 158.2265625],
@@ -150,6 +169,7 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 5,
         description: 'B Long',
         type: 'wall',
+        side: 'offense',
         path: [
           [57, 399.2265625],
           [81, 131.2265625],
@@ -159,6 +179,7 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 6,
         description: 'B Long',
         type: 'projectile',
+        side: 'offense',
         details: {
           spell: 'Poison Cloud',
           info: 'Jump Throw',
@@ -172,6 +193,7 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 7,
         description: 'B Short',
         type: 'wall',
+        side: 'offense',
         path: [
           [263, 400.2265625],
           [105, 128.2265625],
@@ -181,6 +203,7 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 8,
         description: 'A Port',
         type: 'projectile',
+        side: 'defense',
         details: {
           spell: 'Poison Cloud',
           info: 'One-Way, Jump Throw',
@@ -194,6 +217,7 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 9,
         description: 'A Port',
         type: 'wall',
+        side: 'defense',
         path: [
           [398, 239.2265625],
           [102, 247.2265625],
@@ -203,6 +227,7 @@ export const bindTrajectories: AgentTrajectory[] = [
         id: 10,
         description: 'A Port',
         type: 'projectile',
+        side: 'defense',
         details: {
           spell: 'Poison Cloud',
           info: 'One-Way',

@@ -16,6 +16,7 @@ export const addTrajectory = (
     .attr('r', 4)
     .attr('fill', 'green')
     .attr('agent', selectedAgent)
+    .attr('side', trajectory.side)
     .attr('id', trajectory.id)
     .on('click', onTrajectoryClicked);
   trajectory.type === 'projectile'
@@ -26,6 +27,7 @@ export const addTrajectory = (
         .attr('stroke-dasharray', '4, 1')
         .attr('stroke', 'green')
         .attr('agent', selectedAgent)
+        .attr('side', trajectory.side)
         .attr('id', trajectory.id)
         .on('click', onTrajectoryClicked)
         .on('mouseover', function (this: any, d: any, i: any) {
@@ -40,6 +42,7 @@ export const addTrajectory = (
         .attr('stroke-width', 3)
         .attr('stroke', 'green')
         .attr('agent', selectedAgent)
+        .attr('side', trajectory.side)
         .attr('id', trajectory.id)
         .on('click', onTrajectoryClicked)
         .on('mouseover', function (this: any, d: any, i: any) {
@@ -56,4 +59,8 @@ export const resetMap = (svg: any, selectedAgent: string) => {
     .forEach((agent: Agent) => {
       svg.selectAll(`[agent=${agent.name}]`).remove();
     });
+};
+
+export const resetSide = (svg: any, isOffense: boolean) => {
+  svg.selectAll(`[side=${isOffense ? 'offense' : 'defense'}]`).remove();
 };

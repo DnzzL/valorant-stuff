@@ -1,16 +1,16 @@
 import styled from '@emotion/styled';
-import { Card, Layout, List, Menu, Modal, message } from 'antd';
+import { Card, Layout, List, Menu, message, Modal, Switch } from 'antd';
 import * as d3 from 'd3';
 import React, { useEffect, useRef, useState } from 'react';
-import { agents, Agent } from './Agents';
+import { Agent, agents } from './Agents';
 import { ReactComponent as BindSvg } from './assets/maps/bind.svg';
 import { ReactComponent as HavenSvg } from './assets/maps/haven.svg';
 import { ReactComponent as SplitSvg } from './assets/maps/split.svg';
 import { bindTrajectories } from './assets/trajectories/bind/trajectories';
 import { havenTrajectories } from './assets/trajectories/haven/trajectories';
-import { AgentTrajectory, Trajectory } from './shared/interfaces';
 import { splitTrajectories } from './assets/trajectories/split/trajectories';
-import { addTrajectory, resetMap } from './shared/svgUtils';
+import { AgentTrajectory, Trajectory } from './shared/interfaces';
+import { addTrajectory, resetMap, resetSide } from './shared/svgUtils';
 import { StuffDetailsComponent } from './StuffDetails';
 
 const { Meta } = Card;
@@ -20,6 +20,7 @@ const { Content, Sider, Footer } = Layout;
 export const MainPage = () => {
   const [selectedMap, setSelectedMap] = useState<string>('Bind');
   const [selectedAgent, setSelectedAgent] = useState<string>('Sova');
+  const [isOffense, setOffense] = useState<boolean>(true);
 
   const bindRef = useRef(null);
   const havenRef = useRef(null);
@@ -55,7 +56,7 @@ export const MainPage = () => {
           trajectory={trajectory}
         />
       ),
-      width: '100vh',
+      width: '100%',
     });
   }
 
@@ -64,6 +65,12 @@ export const MainPage = () => {
     const svg = d3.select(mapRef.current);
     svg.on('click', clicked);
   });
+
+  useEffect(() => {
+    const mapRef = refs.get(selectedMap)!;
+    const svg = d3.select(mapRef.current);
+    resetSide(svg, !isOffense);
+  }, [isOffense, selectedMap]);
 
   useEffect(() => {
     const mapRef = refs.get(selectedMap)!;
@@ -79,9 +86,15 @@ export const MainPage = () => {
       );
 
     agentTrajectory
-      ? agentTrajectory.trajectories.forEach((trajectory: Trajectory) =>
-          addTrajectory(svg, trajectory, selectedAgent, onTrajectoryClicked)
-        )
+      ? agentTrajectory.trajectories
+          .filter((trajectory: Trajectory) =>
+            isOffense
+              ? trajectory.side === 'offense'
+              : trajectory.side === 'defense'
+          )
+          .forEach((trajectory: Trajectory) =>
+            addTrajectory(svg, trajectory, selectedAgent, onTrajectoryClicked)
+          )
       : message.warn(`no stuff for ${selectedAgent} on ${selectedMap} yet.`);
   });
 
@@ -137,6 +150,12 @@ export const MainPage = () => {
             </List.Item>
           )}
         />
+        <StyledSwitch
+          checkedChildren='Offense'
+          unCheckedChildren='Defense'
+          defaultChecked
+          onChange={() => setOffense(!isOffense)}
+        />
         {selectedMap === 'Bind' ? (
           <StyledMap>
             <BindSvg ref={bindRef}></BindSvg>
@@ -188,6 +207,9 @@ const StyledCard = styled(Card)`
   &.-selected {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
+`;
+const StyledSwitch = styled(Switch)`
+  margin: 0px 1em;
 `;
 
 const StyledMap = styled.div`

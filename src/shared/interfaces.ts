@@ -2,6 +2,7 @@ import { AgentName } from '../Agents';
 export type Coord = number[][];
 
 export type TrajectoryType = 'projectile' | 'wall';
+export type Side = 'offense' | 'defense';
 
 export type Trajectory = {
   id: number;
@@ -9,6 +10,7 @@ export type Trajectory = {
   type: TrajectoryType;
   details?: any;
   path: Coord;
+  side: Side;
 };
 
 export type AgentTrajectory = {
