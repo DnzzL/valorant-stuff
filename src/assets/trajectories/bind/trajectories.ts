@@ -239,4 +239,109 @@ export const bindTrajectories: AgentTrajectory[] = [
       },
     ],
   },
+  {
+    agent: 'Cypher',
+    trajectories: [
+      {
+        id: 1,
+        description: 'B site',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Run and throw',
+          visibility: 'B Site, Elbow & Path from spawn',
+        },
+        path: [
+          [162.68934631347656, 172.44737243652344],
+          [234.99574279785156, 160.3962860107422],
+        ],
+      },
+      {
+        id: 2,
+        description: 'B site',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Jump throw from the top of the green boxes',
+          visibility: 'B Site & B Long',
+        },
+        path: [
+          [108.45956420898438, 186.50694274902344],
+          [58.24680709838867, 231.6984100341797],
+        ],
+      },
+      {
+        id: 3,
+        description: 'B site',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Jump throw from the top of the green boxes',
+          visibility: 'B  Site & Elbow',
+        },
+        path: [
+          [108.45956420898438, 186.50694274902344],
+          [149.634033203125, 234.71119689941406],
+        ],
+      },
+      {
+        id: 4,
+        description: 'Hookah',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Throw from the top of the boxes',
+          visibility: 'Hookah',
+        },
+        path: [
+          [159.6765899658203, 326.098388671875],
+          [171.72764587402344, 331.11968994140625],
+        ],
+      },
+      {
+        id: 5,
+        description: 'A site',
+        type: 'projectile',
+        side: 'defense',
+        details: { info: 'Jump throw', visibility: 'A Site, Bath & A short' },
+        path: [
+          [478.0255432128906, 177.46864318847656],
+          [479.02978515625, 136.29417419433594],
+        ],
+      },
+      {
+        id: 6,
+        description: 'A tower',
+        type: 'projectile',
+        side: 'defense',
+        details: { info: 'Jump from A tower and throw' },
+        path: [
+          [549.32763671875, 165.4175567626953],
+          [589.4978637695312, 157.38352966308594],
+        ],
+      },
+      {
+        id: 7,
+        description: 'A short',
+        type: 'projectile',
+        side: 'defense',
+        details: { info: 'Jump throw', visibility: 'A Site, A short & Vent' },
+        path: [
+          [434.8425598144531, 284.9239501953125],
+          [384.6297912597656, 320.0728759765625],
+        ],
+      },
+      {
+        id: 8,
+        description: 'A short',
+        type: 'projectile',
+        side: 'defense',
+        details: { info: 'Jump throw', visibility: 'A short, part of A site' },
+        path: [
+          [434.8425598144531, 284.9239501953125],
+          [384.6297912597656, 320.0728759765625],
+        ],
+      },
+    ],
+  },
 ];

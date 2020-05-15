@@ -50,9 +50,12 @@ export const StuffDetailsComponent = ({
       <Content>
         {getImages()}
         <Descriptions bordered>
-          {Object.entries(trajectory.details).map(([key, value]) => (
-            <Descriptions.Item label={key}>{value as String}</Descriptions.Item>
-          ))}
+          {trajectory.details &&
+            Object.entries(trajectory.details).map(([key, value]) => (
+              <Descriptions.Item label={key}>
+                {value as String}
+              </Descriptions.Item>
+            ))}
         </Descriptions>
       </Content>
     </Layout>

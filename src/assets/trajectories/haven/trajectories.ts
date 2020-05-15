@@ -364,4 +364,132 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
     ],
   },
+  {
+    agent: 'Cypher',
+    trajectories: [
+      {
+        id: 1,
+        description: 'A Long',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Jump throw from the top of the box',
+          visibility: 'Back of A site',
+        },
+        path: [
+          [483.04681396484375, 242.74522399902344],
+          [524.2212524414062, 309.02606201171875],
+        ],
+      },
+      {
+        id: 2,
+        description: 'A tower',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Go to the edge of A tower window',
+          visibility: 'A Site',
+        },
+        path: [
+          [619.6255493164062, 215.6303253173828],
+          [668.8340454101562, 215.6303253173828],
+        ],
+      },
+      {
+        id: 3,
+        description: 'A site',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Jump throw from the edge of the box',
+          visibility: 'A site',
+        },
+        path: [
+          [583.4723510742188, 282.91546630859375],
+          [554.3489379882812, 352.20904541015625],
+        ],
+      },
+      {
+        id: 4,
+        description: 'A long',
+        type: 'projectile',
+        side: 'offense',
+        details: {
+          info: 'Jump throw from the concrete box',
+          visibility: 'A tower',
+        },
+        path: [
+          [524.2212524414062, 473.72393798828125],
+          [518.1957397460938, 426.52392578125],
+        ],
+      },
+      {
+        id: 5,
+        description: 'A Lobby',
+        type: 'projectile',
+        side: 'offense',
+        details: { info: 'Jump throw the garden', visibility: 'A long' },
+        path: [
+          [475.01275634765625, 514.8983764648438],
+          [460.95318603515625, 516.9069213867188],
+        ],
+      },
+      {
+        id: 6,
+        description: 'B site',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Jump throw from the edge of the box',
+          visibility: 'B Site & A Link',
+        },
+        path: [
+          [403.71063232421875, 326.098388671875],
+          [313.3276672363281, 317.06011962890625],
+        ],
+      },
+      {
+        id: 7,
+        description: 'Garage',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Jump throw from the edge of the window',
+          visibility: 'Garage, C window',
+        },
+        path: [
+          [243.5, 299.2166748046875],
+          [225.5, 335.2166748046875],
+        ],
+      },
+      {
+        id: 8,
+        description: 'C site',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Jump throw from the edge of the window',
+          visibility: 'C site, C cubby & C connector',
+        },
+        path: [
+          [60.255313873291016, 283.919677734375],
+          [55.23404312133789, 350.2005615234375],
+        ],
+      },
+      {
+        id: 9,
+        description: 'C site',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Run from Plat, jump and throw',
+          visibility: 'C site',
+        },
+        path: [
+          [74.31489562988281, 286.93243408203125],
+          [166.7063751220703, 328.10693359375],
+        ],
+      },
+    ],
+  },
 ];

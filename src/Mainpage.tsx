@@ -184,6 +184,7 @@ export const MainPage = () => {
             <a href='https://www.youtube.com/channel/UCfmXDMVBR0hu9bdUiJRMOgQ'>
               FeyRazzle
             </a>
+            ,<a href='https://www.youtube.com/user/Fenhri'> Peak</a>
           </div>
           <div>
             <a href='https://github.com/DnzzL/valorant-stuff/blob/master/README.md'>

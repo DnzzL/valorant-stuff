@@ -314,4 +314,172 @@ export const splitTrajectories: AgentTrajectory[] = [
       },
     ],
   },
+  {
+    agent: 'Cypher',
+    trajectories: [
+      {
+        id: 1,
+        description: 'B Tower',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          visibility: 'Mid mail & B ropes',
+        },
+        path: [
+          [225.9574432373047, 342.16650390625],
+          [279.1829833984375, 364.2601318359375],
+        ],
+      },
+      {
+        id: 2,
+        description: 'B Site',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Jump throw',
+          visibility: 'B site & B Main',
+        },
+        path: [
+          [166.7063751220703, 238.7281951904297],
+          [56.23830032348633, 207.59629821777344],
+        ],
+      },
+      {
+        id: 3,
+        description: 'B Main',
+        type: 'projectile',
+        side: 'offense',
+        details: {
+          info: 'Jump throw',
+          visibility: 'B Main',
+        },
+        path: [
+          [67.28511047363281, 326.098388671875],
+          [36.15319061279297, 426.52392578125],
+        ],
+      },
+      {
+        id: 4,
+        description: 'Top Mid',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Jump throw',
+          visibility: 'Mid mail, Top Mid & Bottom Mid',
+        },
+        path: [
+          [286.2127685546875, 360.24310302734375],
+          [353.49786376953125, 345.17926025390625],
+        ],
+      },
+      {
+        id: 5,
+        description: 'A Tower',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Jump throw on top of the boxes',
+          visibility: 'A tower',
+        },
+        path: [
+          [454.92767333984375, 226.67713928222656],
+          [508.1531982421875, 191.52821350097656],
+        ],
+      },
+      {
+        id: 6,
+        description: 'A Screens',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Jump throw from the edge of A tower',
+          visibility: 'Screens, A Rafters, A Main, path to Spawn',
+        },
+        path: [
+          [542.2978515625, 205.58778381347656],
+          [544.306396484375, 110.18351745605469],
+        ],
+      },
+      {
+        id: 7,
+        description: 'A Screens',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Jump from the edge of A tower and throw',
+          visibility: 'A Rafters, A Main & Back A',
+        },
+        path: [
+          [553.3446655273438, 206.59202575683594],
+          [542.2978515625, 154.3707733154297],
+        ],
+      },
+      {
+        id: 8,
+        description: 'A Screens',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          info: 'Jump throw',
+          visibility: 'Screens & A Main',
+        },
+        path: [
+          [585.4808349609375, 134.28565979003906],
+          [561.3787231445312, 93.11119079589844],
+        ],
+      },
+      {
+        id: 9,
+        description: 'A Site',
+        type: 'projectile',
+        side: 'defense',
+        details: {
+          visibility: 'A Site',
+        },
+        path: [
+          [649.753173828125, 197.55372619628906],
+          [675.8638305664062, 167.4260711669922],
+        ],
+      },
+      {
+        id: 10,
+        description: 'A Lobby',
+        type: 'projectile',
+        side: 'offense',
+        details: { info: 'Jump throw' },
+        path: [
+          [638.7063598632812, 472.71966552734375],
+          [586.485107421875, 436.56646728515625],
+        ],
+      },
+      {
+        id: 11,
+        description: 'A Lobby',
+        type: 'projectile',
+        side: 'offense',
+        details: {
+          info: 'Jump throw',
+          visibility: 'ALobby, A Main & part of screens',
+        },
+        path: [
+          [638.7063598632812, 472.71966552734375],
+          [672.85107421875, 417.48565673828125],
+        ],
+      },
+      {
+        id: 12,
+        description: 'A Lobby',
+        type: 'projectile',
+        side: 'offense',
+        details: {
+          info: 'Jump throw',
+          visibility: 'A Lobby, A Ramp & A Tower',
+        },
+        path: [
+          [638.7063598632812, 472.71966552734375],
+          [672.85107421875, 417.48565673828125],
+        ],
+      },
+    ],
+  },
 ];
