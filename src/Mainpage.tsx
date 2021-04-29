@@ -6,9 +6,13 @@ import { Agent, agents } from './Agents';
 import { ReactComponent as BindSvg } from './assets/maps/bind.svg';
 import { ReactComponent as HavenSvg } from './assets/maps/haven.svg';
 import { ReactComponent as SplitSvg } from './assets/maps/split.svg';
+import { ReactComponent as AscentSvg } from './assets/maps/ascent.svg';
+import { ReactComponent as IceboxSvg } from './assets/maps/icebox.svg';
 import { bindTrajectories } from './assets/trajectories/bind/trajectories';
 import { havenTrajectories } from './assets/trajectories/haven/trajectories';
 import { splitTrajectories } from './assets/trajectories/split/trajectories';
+import { ascentTrajectories } from './assets/trajectories/ascent/trajectories';
+import { iceboxTrajectories } from './assets/trajectories/icebox/trajectories';
 import { AgentTrajectory, Trajectory } from './shared/interfaces';
 import { addTrajectory, resetMap, resetSide } from './shared/svgUtils';
 import { StuffDetailsComponent } from './StuffDetails';
@@ -25,16 +29,22 @@ export const MainPage = () => {
   const bindRef = useRef(null);
   const havenRef = useRef(null);
   const splitRef = useRef(null);
+  const ascentRef = useRef(null);
+  const iceboxRef = useRef(null);
   const refs = new Map([
     ['Bind', bindRef],
     ['Haven', havenRef],
     ['Split', splitRef],
+    ['Ascent', ascentRef],
+    ['Icebox', iceboxRef]
   ]);
 
   const trajectories = new Map([
     ['Bind', bindTrajectories],
     ['Haven', havenTrajectories],
     ['Split', splitTrajectories],
+    ['Ascent', ascentTrajectories],
+    ['Icebox', iceboxTrajectories]
   ]);
 
   function onTrajectoryClicked(this: any, d: any, i: any) {
@@ -118,6 +128,8 @@ export const MainPage = () => {
           <Menu.Item key='Bind'>Bind</Menu.Item>
           <Menu.Item key='Haven'>Haven</Menu.Item>
           <Menu.Item key='Split'>Split</Menu.Item>
+          <Menu.Item key='Ascent'>Ascent</Menu.Item>
+          <Menu.Item key='Icebox'>Icebox</Menu.Item>
         </Menu>
       </Sider>
       <StyledContent>
@@ -164,15 +176,21 @@ export const MainPage = () => {
           <StyledMap>
             <HavenSvg ref={havenRef}></HavenSvg>
           </StyledMap>
-        ) : (
+        ) : selectedMap === 'Split' ? (
           <StyledMap>
             <SplitSvg ref={splitRef}></SplitSvg>
           </StyledMap>
-        )}
+        ) : selectedMap === 'Icebox' ? (
+          <StyledMap>
+            <IceboxSvg ref={iceboxRef}></IceboxSvg>
+          </StyledMap>
+        ) :  <StyledMap>
+        <AscentSvg ref={ascentRef}></AscentSvg>
+      </StyledMap>}
         <Footer style={{ textAlign: 'center' }}>
           <div>
             Created by
-            <a href='https://www.thomaslegrand.tech'> Thomas Legrand </a>
+            <a href='https://thomas.legrand.sh'> Thomas Legrand </a>
             {new Date().getFullYear()}
           </div>
           <div>

@@ -1,19 +1,19 @@
-import { AgentTrajectory } from '../../../shared/interfaces';
+import { AgentTrajectory } from "../../../shared/interfaces";
 
 export const havenTrajectories: AgentTrajectory[] = [
   {
-    agent: 'Sova',
+    agent: "Sova",
     trajectories: [
       {
         id: 1,
-        description: 'B Site',
-        type: 'projectile',
-        side: 'defense',
+        description: "B Site",
+        type: "projectile",
+        side: "defense",
         details: {
-          strength: 'full',
+          strength: "full",
           bounces: 2,
           description:
-            'find the sun and line it up with the middle of the wood wall, look at the roof and find the third window from the left, aim up in the middle.',
+            "find the sun and line it up with the middle of the wood wall, look at the roof and find the third window from the left, aim up in the middle.",
         },
         path: [
           [356.5, 219.2265625],
@@ -22,14 +22,14 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 2,
-        description: 'B Site',
-        type: 'projectile',
-        side: 'defense',
+        description: "B Site",
+        type: "projectile",
+        side: "defense",
         details: {
-          strength: 'full',
+          strength: "full",
           bounces: 2,
           description:
-            'line up yourself with the last window on the right of the roof, aim in the middle of the window and then the wooden bea above.',
+            "line up yourself with the last window on the right of the roof, aim in the middle of the window and then the wooden bea above.",
         },
         path: [
           [313.5, 304.2265625],
@@ -38,14 +38,14 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 3,
-        description: 'C Lobby',
-        type: 'projectile',
-        side: 'offense',
+        description: "C Lobby",
+        type: "projectile",
+        side: "offense",
         details: {
           strength: 2,
           bounces: 0,
           description:
-            'stand up on top of the yellow thing, turn around and aim at the faded orange cloth inside the gap where you can see the sky.',
+            "stand up on top of the yellow thing, turn around and aim at the faded orange cloth inside the gap where you can see the sky.",
         },
         path: [
           [194.5, 580.2265625],
@@ -54,13 +54,13 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 4,
-        description: 'Mid Courtyard',
-        type: 'projectile',
-        side: 'offense',
+        description: "Mid Courtyard",
+        type: "projectile",
+        side: "offense",
         details: {
-          strength: 'full',
+          strength: "full",
           bounces: 1,
-          description: 'stand against the window near the garage, ',
+          description: "stand against the window near the garage, ",
         },
         path: [
           [306.5, 418.2265625],
@@ -70,13 +70,13 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 5,
-        description: 'A Tower',
-        type: 'projectile',
-        side: 'defense',
+        description: "A Tower",
+        type: "projectile",
+        side: "defense",
         details: {
           strength: 2,
           bounces: 0,
-          description: 'sat on the edge of the window in Heaven',
+          description: "sat on the edge of the window in Heaven",
         },
         path: [
           [648.5, 214.2265625],
@@ -85,13 +85,13 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 6,
-        description: 'Attacker Side Spawn',
-        type: 'projectile',
-        side: 'offense',
+        description: "Attacker Side Spawn",
+        type: "projectile",
+        side: "offense",
         details: {
           strength: 3,
           bounces: 2,
-          description: 'sat on the sleeve',
+          description: "sat on the sleeve",
         },
         path: [
           [372.5, 680.2265625],
@@ -100,14 +100,14 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 7,
-        description: 'A Site',
-        type: 'projectile',
-        side: 'defense',
+        description: "A Site",
+        type: "projectile",
+        side: "defense",
         details: {
           strength: 3,
           bounces: 0,
           description:
-            'stand on these boxes, aim under a little bit below at the corner of the groove.',
+            "stand on these boxes, aim under a little bit below at the corner of the groove.",
         },
         path: [
           [670.5, 227.2265625],
@@ -116,14 +116,14 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 8,
-        description: 'C Site',
-        type: 'projectile',
-        side: 'defense',
+        description: "C Site",
+        type: "projectile",
+        side: "defense",
         details: {
           strength: 2,
           bounces: 0,
           description:
-            'stand on this orange line, and line the e of the charge up to the electrical unit of the pole.',
+            "stand on this orange line, and line the e of the charge up to the electrical unit of the pole.",
         },
         path: [
           [153.5, 210.2265625],
@@ -132,9 +132,9 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 9,
-        description: 'Defender Site Spawn',
-        type: 'projectile',
-        side: 'defense',
+        description: "Defender Site Spawn",
+        type: "projectile",
+        side: "defense",
         details: {
           strength: 3,
           bounces: 0,
@@ -146,13 +146,13 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 10,
-        description: 'C Site',
-        type: 'projectile',
-        side: 'defense',
+        description: "C Site",
+        type: "projectile",
+        side: "defense",
         details: {
           strength: 3,
           bounces: 0,
-          description: 'stand next to the tiny box on the top of the plateau.',
+          description: "stand next to the tiny box on the top of the plateau.",
         },
         path: [
           [37.5, 244.2265625],
@@ -161,14 +161,14 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 11,
-        description: 'A Garden',
-        type: 'projectile',
-        side: 'offense',
+        description: "A Garden",
+        type: "projectile",
+        side: "offense",
         details: {
           strength: 3,
           bounces: 0,
           description:
-            'stand on the third rock outside of A long and aim towards the third notch of the wall and aim slightly down from it',
+            "stand on the third rock outside of A long and aim towards the third notch of the wall and aim slightly down from it",
         },
         path: [
           [453.5, 569.2265625],
@@ -178,15 +178,15 @@ export const havenTrajectories: AgentTrajectory[] = [
     ],
   },
   {
-    agent: 'Viper',
+    agent: "Viper",
     trajectories: [
       {
         id: 1,
-        description: 'A Long',
-        type: 'projectile',
-        side: 'offense',
+        description: "A Long",
+        type: "projectile",
+        side: "offense",
         details: {
-          spell: 'Poison Cloud',
+          spell: "Poison Cloud",
         },
         path: [
           [483.5, 477.2265625],
@@ -195,9 +195,9 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 2,
-        description: 'A Long',
-        type: 'wall',
-        side: 'offense',
+        description: "A Long",
+        type: "wall",
+        side: "offense",
 
         path: [
           [483.5, 477.2265625],
@@ -206,12 +206,12 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 3,
-        description: 'C Lobby',
-        type: 'projectile',
-        side: 'offense',
+        description: "C Lobby",
+        type: "projectile",
+        side: "offense",
 
         details: {
-          spell: 'Snake Bite',
+          spell: "Snake Bite",
         },
         path: [
           [483.5, 477.2265625],
@@ -220,9 +220,9 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 4,
-        description: 'C Lobby',
-        type: 'wall',
-        side: 'offense',
+        description: "C Lobby",
+        type: "wall",
+        side: "offense",
 
         path: [
           [148, 537.2265625],
@@ -231,12 +231,12 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 5,
-        description: 'C Lobby',
-        type: 'projectile',
-        side: 'offense',
+        description: "C Lobby",
+        type: "projectile",
+        side: "offense",
 
         details: {
-          spell: 'Poison Cloud',
+          spell: "Poison Cloud",
         },
         path: [
           [148, 537.2265625],
@@ -245,12 +245,12 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 6,
-        description: 'C Lobby',
-        type: 'projectile',
-        side: 'offense',
+        description: "C Lobby",
+        type: "projectile",
+        side: "offense",
 
         details: {
-          spell: 'Snake Bite',
+          spell: "Snake Bite",
         },
         path: [
           [141, 538.2265625],
@@ -259,13 +259,13 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 7,
-        description: 'C Lobby',
-        type: 'projectile',
-        side: 'offense',
+        description: "C Lobby",
+        type: "projectile",
+        side: "offense",
 
         details: {
-          spell: 'Poison Cloud',
-          information: 'Jump Throw',
+          spell: "Poison Cloud",
+          information: "Jump Throw",
         },
         path: [
           [161, 543.2265625],
@@ -274,9 +274,9 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 8,
-        description: 'Bottom Mid',
-        type: 'wall',
-        side: 'offense',
+        description: "Bottom Mid",
+        type: "wall",
+        side: "offense",
 
         path: [
           [300, 466.2265625],
@@ -285,9 +285,9 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 9,
-        description: 'B Site',
-        type: 'wall',
-        side: 'defense',
+        description: "B Site",
+        type: "wall",
+        side: "defense",
         path: [
           [414, 274.2265625],
           [672, 274.2265625],
@@ -295,9 +295,9 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 10,
-        description: 'C Link',
-        type: 'wall',
-        side: 'defense',
+        description: "C Link",
+        type: "wall",
+        side: "defense",
 
         path: [
           [288, 230.2265625],
@@ -306,12 +306,12 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 11,
-        description: 'C Link',
-        type: 'projectile',
-        side: 'defense',
+        description: "C Link",
+        type: "projectile",
+        side: "defense",
 
         details: {
-          spell: 'Poison Cloud',
+          spell: "Poison Cloud",
         },
         path: [
           [288, 230.2265625],
@@ -320,13 +320,13 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 12,
-        description: 'C Window',
-        type: 'projectile',
-        side: 'defense',
+        description: "C Window",
+        type: "projectile",
+        side: "defense",
 
         details: {
-          spell: 'Poison Cloud',
-          info: 'One-way',
+          spell: "Poison Cloud",
+          info: "One-way",
         },
         path: [
           [240, 279.2265625],
@@ -335,13 +335,13 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 13,
-        description: 'B Site',
-        type: 'projectile',
-        side: 'defense',
+        description: "B Site",
+        type: "projectile",
+        side: "defense",
 
         details: {
-          spell: 'Poison Cloud',
-          info: 'One-way',
+          spell: "Poison Cloud",
+          info: "One-way",
         },
         path: [
           [412, 328.2265625],
@@ -350,12 +350,12 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 14,
-        description: 'B Site',
-        type: 'projectile',
-        side: 'defense',
+        description: "B Site",
+        type: "projectile",
+        side: "defense",
         details: {
-          spell: 'Snake Bite',
-          info: 'Run Throw',
+          spell: "Snake Bite",
+          info: "Run Throw",
         },
         path: [
           [335, 184.2265625],
@@ -365,16 +365,16 @@ export const havenTrajectories: AgentTrajectory[] = [
     ],
   },
   {
-    agent: 'Cypher',
+    agent: "Cypher",
     trajectories: [
       {
         id: 1,
-        description: 'A Long',
-        type: 'projectile',
-        side: 'defense',
+        description: "A Long",
+        type: "projectile",
+        side: "defense",
         details: {
-          info: 'Jump throw from the top of the box',
-          visibility: 'Back of A site',
+          info: "Jump throw from the top of the box",
+          visibility: "Back of A site",
         },
         path: [
           [483.04681396484375, 242.74522399902344],
@@ -383,12 +383,12 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 2,
-        description: 'A tower',
-        type: 'projectile',
-        side: 'defense',
+        description: "A tower",
+        type: "projectile",
+        side: "defense",
         details: {
-          info: 'Go to the edge of A tower window',
-          visibility: 'A Site',
+          info: "Go to the edge of A tower window",
+          visibility: "A Site",
         },
         path: [
           [619.6255493164062, 215.6303253173828],
@@ -397,12 +397,12 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 3,
-        description: 'A site',
-        type: 'projectile',
-        side: 'defense',
+        description: "A site",
+        type: "projectile",
+        side: "defense",
         details: {
-          info: 'Jump throw from the edge of the box',
-          visibility: 'A site',
+          info: "Jump throw from the edge of the box",
+          visibility: "A site",
         },
         path: [
           [583.4723510742188, 282.91546630859375],
@@ -411,12 +411,12 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 4,
-        description: 'A long',
-        type: 'projectile',
-        side: 'offense',
+        description: "A long",
+        type: "projectile",
+        side: "offense",
         details: {
-          info: 'Jump throw from the concrete box',
-          visibility: 'A tower',
+          info: "Jump throw from the concrete box",
+          visibility: "A tower",
         },
         path: [
           [524.2212524414062, 473.72393798828125],
@@ -425,10 +425,10 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 5,
-        description: 'A Lobby',
-        type: 'projectile',
-        side: 'offense',
-        details: { info: 'Jump throw the garden', visibility: 'A long' },
+        description: "A Lobby",
+        type: "projectile",
+        side: "offense",
+        details: { info: "Jump throw the garden", visibility: "A long" },
         path: [
           [475.01275634765625, 514.8983764648438],
           [460.95318603515625, 516.9069213867188],
@@ -436,12 +436,12 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 6,
-        description: 'B site',
-        type: 'projectile',
-        side: 'defense',
+        description: "B site",
+        type: "projectile",
+        side: "defense",
         details: {
-          info: 'Jump throw from the edge of the box',
-          visibility: 'B Site & A Link',
+          info: "Jump throw from the edge of the box",
+          visibility: "B Site & A Link",
         },
         path: [
           [403.71063232421875, 326.098388671875],
@@ -450,12 +450,12 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 7,
-        description: 'Garage',
-        type: 'projectile',
-        side: 'defense',
+        description: "Garage",
+        type: "projectile",
+        side: "defense",
         details: {
-          info: 'Jump throw from the edge of the window',
-          visibility: 'Garage, C window',
+          info: "Jump throw from the edge of the window",
+          visibility: "Garage, C window",
         },
         path: [
           [243.5, 299.2166748046875],
@@ -464,12 +464,12 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 8,
-        description: 'C site',
-        type: 'projectile',
-        side: 'defense',
+        description: "C site",
+        type: "projectile",
+        side: "defense",
         details: {
-          info: 'Jump throw from the edge of the window',
-          visibility: 'C site, C cubby & C connector',
+          info: "Jump throw from the edge of the window",
+          visibility: "C site, C cubby & C connector",
         },
         path: [
           [60.255313873291016, 283.919677734375],
@@ -478,16 +478,53 @@ export const havenTrajectories: AgentTrajectory[] = [
       },
       {
         id: 9,
-        description: 'C site',
-        type: 'projectile',
-        side: 'defense',
+        description: "C site",
+        type: "projectile",
+        side: "defense",
         details: {
-          info: 'Run from Plat, jump and throw',
-          visibility: 'C site',
+          info: "Run from Plat, jump and throw",
+          visibility: "C site",
         },
         path: [
           [74.31489562988281, 286.93243408203125],
           [166.7063751220703, 328.10693359375],
+        ],
+      },
+    ],
+  },
+  {
+    agent: "Brimstone",
+    trajectories: [
+      {
+        id: 1,
+        description: "C Site default",
+        type: "projectile",
+        side: "offense",
+        details: {
+          info: "Aim at the intersection of the cable and the roof",
+        },
+        path: [
+          [61, 537.90625],
+          [167, 348.90625],
+          [107, 272.90625],
+        ],
+      },
+    ],
+  },
+  {
+    agent: "Killjoy",
+    trajectories: [
+      {
+        id: 1,
+        description: "C Site default",
+        type: "projectile",
+        side: "offense",
+        details: {
+          info: "Aim to the left of third wooden thingy",
+        },
+        path: [
+          [287, 230.90625],
+          [103, 277.90625],
         ],
       },
     ],
